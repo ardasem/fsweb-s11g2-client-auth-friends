@@ -1,0 +1,71 @@
+.form--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form--heading{
+    color: black;
+    font-size: 62px;
+    font-weight: 900;
+    padding: 20px;
+    border: none;
+}
+.input--container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;}
+
+
+.form--input--label {
+    font-size: 16px;
+    font-weight: 900;  
+}
+
+.form--input--div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.form--input {
+    background-color: black;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 300px;
+    font-size: 26px;
+    font-weight: 900;
+    padding: 15px;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.submit--button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 26px;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;   
+    font-weight: 900; 
+    height: 60px;
+    width: 330px;
+    margin-top: 20px;
+
+}
+
+.submit--button:active{
+   
+    height: 58px;
+    width: 328px;
+
+
+}
