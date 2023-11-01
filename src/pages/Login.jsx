@@ -5,7 +5,6 @@ import Form from '../components/Form'
 function Login() {
   return (
     <div>
-        <Header/>
         <Form Heading={'LOGIN'} InputOneHeading={'USERNAME'} InputTwoHeading={'PASSWORD'} ButtonFunction={'login'}/>
     </div>
   )

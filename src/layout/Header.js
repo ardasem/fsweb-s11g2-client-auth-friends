@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import "../styles/header.css";
+import { useContext } from "react";
+import { LoginContext } from "../contexts/LoginContext";
 
 function Header() {
+    const {loginData} = useContext(LoginContext)
   return (
     <header>
       <div className="header--container">

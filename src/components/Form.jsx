@@ -2,10 +2,12 @@ import React from "react";
 import "../styles/form.css";
 import { useContext,useState } from "react";
 import { FriendsContext } from "../contexts/FriendsContext";
+import { LoginContext } from "../contexts/LoginContext";
 
 function Form({Heading,InputOneHeading,InputTwoHeading,ButtonFunction}) {
 
-  const {addFriend,friends} = useContext(FriendsContext)
+  const {addFriend,friends} = useContext(FriendsContext);
+  const {loginFunc} = useContext(LoginContext);
   const [formState,setFormState] = useState({})
 
   const handleSubmit = (e)=>{
@@ -14,8 +16,8 @@ function Form({Heading,InputOneHeading,InputTwoHeading,ButtonFunction}) {
       console.log('addFriend');
       addFriend(formState);
     }else if(ButtonFunction==='login') {
-      console.log('login')
-      console.log(formState)
+      console.log('login');
+      loginFunc(formState);
     }else{
       console.log('none')
     }
@@ -48,7 +50,7 @@ function Form({Heading,InputOneHeading,InputTwoHeading,ButtonFunction}) {
 
         <div className="form--input--div">
           <label className="form--input--label">{InputTwoHeading}</label>
-          <input id='input--two' className="form--input" type="text" onChange={handleChange}  />
+          <input id='input--two' className="form--input" type="password" onChange={handleChange}  />
         </div>
       </div>
 

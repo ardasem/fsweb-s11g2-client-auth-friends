@@ -8,7 +8,6 @@ function AddFriends() {
   const {addFriend} = useContext(FriendsContext)
   return (
     <div>
-      <Header />
       <Form Heading={'ADD FRIEND'} InputOneHeading={'FRIEND NAME'} InputTwoHeading={'FRIEND EMAIL'} ButtonFunction={'addFriend'}/>
     </div>
   )

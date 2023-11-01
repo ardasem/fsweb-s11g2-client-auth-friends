@@ -4,13 +4,14 @@ import {data} from '../data'
 
 export const FriendsContext = createContext();
 
-function FriendsProvider({children}) {
+function FriendsProvider({children,...rest}) {
     const [friends,setFriends] = useState(data)
 
     const addFriend = (friendObject)=>{
         const newState = [...friends,friendObject]
         setFriends(newState);
     }
+
   return (
  
      <FriendsContext.Provider value={{friends,addFriend}}>

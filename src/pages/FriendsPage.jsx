@@ -5,7 +5,6 @@ import Header from '../layout/Header'
 function FriendsPage() {
   return (
     <div>
-        <Header />
         <FriendsList />
     </div>
   )

@@ -5,7 +5,7 @@ const ProtectedPage = ({ PageComponent, fromURL, ...rest }) => {
   let { id } = useParams();
 
   const isLoggedIn = () => {
-    if (true) {
+    if (localStorage.getItem("token")) {
       return <PageComponent {...rest} />;
     } else {
       localStorage.removeItem("registeredUser");
